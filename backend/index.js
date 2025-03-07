@@ -44,12 +44,10 @@ app.use("/api/notifications", notificationRoutes);
 app.use("/api/contact", contactRoutes);
 
 if (process.env.NODE_ENV === "development") {
-  app.use(express.static(path.join(path.resolve(), "/frontend/build")));
+  app.use(express.static(path.join(__dirname, "../frontend")));
 
   app.get("*", (req, res) => {
-    res.sendFile(
-      path.resolve(path.resolve(), "frontend", "build", "index.html")
-    );
+    res.sendFile(path.resolve(path.resolve(), "frontend", "index.html"));
   });
 }
 
