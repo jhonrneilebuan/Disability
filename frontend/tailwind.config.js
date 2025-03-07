@@ -42,18 +42,18 @@ export default {
         rowdies: ["Rowdies", "cursive"],
       },
       backgroundImage: {
-        "applicant-bg-1": "url('Background-1.png')",
-        "applicant-bg-2": "url('Background-2.png')",
-        "applicant-bg-3": "url('Background-3.png')",
-        "applicant-nbg-1": "url('new-bg-sample.png')",
-        "applicant-nbg-2": "url('applicant-nbg.jpg')",
-        "applicant-nbg-3": "url('bgbg.jpg')",
-        "applicant-nbg-4": "url('bgbgbg.jpg')",
-        "applicant-nbg-5": "url('bgbgbgbg.jpg')",
-        "applicant-nbg-6": "url('bgbgbgbgbg.jpg')",
-        "sample-logo":"url('sample-logo.png')",
-        "abtusimg":"url(abtusimg.jpg)",
-        "initiallogowhite":"url(initiallogowhite.jpg)"
+        "applicant-bg-1": "url('/Background-1.png')",
+        "applicant-bg-2": "url('/Background-2.png')",
+        "applicant-bg-3": "url('/Background-3.png')",
+        "applicant-nbg-1": "url('/new-bg-sample.png')",
+        "applicant-nbg-2": "url('/applicant-nbg.jpg')",
+        "applicant-nbg-3": "url('/bgbg.jpg')",
+        "applicant-nbg-4": "url('/bgbgbg.jpg')",
+        "applicant-nbg-5": "url('/bgbgbgbg.jpg')",
+        "applicant-nbg-6": "url('/bgbgbgbgbg.jpg')",
+        "sample-logo":"url('/sample-logo.png')",
+        "abtusimg":"url('/abtusimg.jpg')",
+        "initiallogowhite":"url('/initiallogowhite.jpg')"
 
       },
       textShadow: {
