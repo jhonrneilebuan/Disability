@@ -2,7 +2,8 @@ import axios from "axios";
 import toast from "react-hot-toast";
 import { create } from "zustand";
 
-const API_URL = "https://disability-careers.onrender.com";
+const API_URL = "https://disability-careers.onrender.com/api";
+
 
 axios.defaults.withCredentials = true;
 
