@@ -3,7 +3,7 @@ import axios from "axios";
 import { create } from "zustand";
 import toast from "react-hot-toast";
 
-const BASE_URL = "http://localhost:8080/api/admin";
+const BASE_URL = "https://disability-careers.onrender.com";
 
 axios.defaults.withCredentials = true;
 export const adminStore = create((set) => ({
