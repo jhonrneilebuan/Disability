@@ -1,5 +1,4 @@
 import { chatStore } from "../stores/chatStore";
-import ChatContainer from "../components/chatContainer";
 import NoChatSelected from "../components/NoChatSelected";
 import ChatSidebar from "../components/chatSidebar";
 import Navbar from "../components/Navbar";
@@ -7,6 +6,8 @@ import NavbarEmployer from "../components/NavbarEmployer";
 import { authStore } from "../stores/authStore";
 import { ChevronLeft } from "lucide-react"; 
 import { useNavigate } from "react-router-dom";
+import ChatContainer from "@/components/ChatContainer";
+
 
 const HomePage = () => {
   const { selectedUser } = chatStore();
