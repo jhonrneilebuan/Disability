@@ -3,6 +3,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import express from "express";
 import path from "path";
+import { fileURLToPath } from "url";
 
 
 import { corsOptions } from "./config/cors.config.js";
@@ -43,11 +44,16 @@ app.use("/api/email", emailRoutes);
 app.use("/api/notifications", notificationRoutes);
 app.use("/api/contact", contactRoutes);
 
+
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 if (process.env.NODE_ENV === "development") {
-  app.use(express.static(path.join(dirname, "../frontend")));
+  app.use(express.static(path.join(__dirname, "../frontend")));
 
   app.get("*", (req, res) => {
-    res.sendFile(path.join(dirname, "frontend", "index.html"));
+    res.sendFile(path.join(__dirname, "../frontend", "index.html"));
   });
 }
 
