@@ -1,5 +1,5 @@
 export const corsOptions = {
-  origin: ["http://localhost:5173"],
+  origin: ["https://disability-frontend.onrender.com"],
   methods: ["GET", "PUT", "POST", "DELETE", "PATCH"],
   credentials: true,
 };
