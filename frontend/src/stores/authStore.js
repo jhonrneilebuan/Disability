@@ -2,10 +2,21 @@ import axios from "axios";
 import toast from "react-hot-toast";
 import { io } from "socket.io-client";
 import { create } from "zustand";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 const API_URL = import.meta.env.NODE_ENV === "development" ? "https://disability-careers.onrender.com/api" : "/api";
 
 const BASE_URL = "https://disability-careers.onrender.com";
+
+
+const router = createBrowserRouter(routes, {
+  future: {
+    v7_startTransition: true,
+    v7_relativeSplatPath: true,
+  },
+});
+
+<RouterProvider router={router} />;
 
 axios.defaults.withCredentials = true;
 export const authStore = create((set, get) => ({
