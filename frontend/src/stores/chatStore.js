@@ -3,7 +3,7 @@ import toast from "react-hot-toast";
 import { create } from "zustand";
 import { authStore } from "./authStore";
 
-const API_URL = "https://disability-careers.onrender.com/api";
+const API_URL = import.meta.env.NODE_ENV === "development" ? "https://disability-careers.onrender.com/api" : "http://localhost:5000/api";
 axios.defaults.withCredentials = true;
 
 export const chatStore = create((set, get) => ({

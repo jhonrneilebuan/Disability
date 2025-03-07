@@ -2,7 +2,7 @@ import cookieParser from "cookie-parser";
 import cors from "cors";
 import dotenv from "dotenv";
 import express from "express";
-
+import path from "path";
 
 
 import { corsOptions } from "./config/cors.config.js";
@@ -43,6 +43,15 @@ app.use("/api/email", emailRoutes);
 app.use("/api/notifications", notificationRoutes);
 app.use("/api/contact", contactRoutes);
 
+if (process.env.NODE_ENV === "development") {
+  app.use(express.static(path.join(path.resolve(), "/frontend/build")));
+
+  app.get("*", (req, res) => {
+    res.sendFile(
+      path.resolve(path.resolve(), "frontend", "build", "index.html")
+    );
+  });
+}
 
 const PORT = process.env.PORT || 5000
 
