@@ -3,7 +3,7 @@ import toast from "react-hot-toast";
 import { io } from "socket.io-client";
 import { create } from "zustand";
 
-const API_URL = "https://disability-careers.onrender.com";
+const API_URL = "https://disability-careers.onrender.com/api";
 
 const BASE_URL = "https://disability-careers.onrender.com";
 
