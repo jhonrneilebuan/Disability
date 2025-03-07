@@ -6,7 +6,7 @@ import NavbarEmployer from "../components/NavbarEmployer";
 import { authStore } from "../stores/authStore";
 import { ChevronLeft } from "lucide-react"; 
 import { useNavigate } from "react-router-dom";
-import ChatContainer from "@/components/ChatContainer";
+import ChatContainer from "../components/ChatContainer";
 
 
 const HomePage = () => {
