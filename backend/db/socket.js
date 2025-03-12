@@ -8,7 +8,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: ["https://disability-careers-backend.vercel.app/"],
+    origin: ["https://disability-frontend.onrender.com"],
     methods: ["GET", "PUT", "POST", "DELETE", "PATCH"],
     credentials: true,
   },
