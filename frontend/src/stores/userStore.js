@@ -2,7 +2,7 @@ import axios from "axios";
 import toast from "react-hot-toast";
 import { create } from "zustand";
 
-const API_URL = import.meta.env.NODE_ENV === "development" ? "https://disability-careers.onrender.com/api" : "http://localhost:5000/api";
+const API_URL = "https://disability-careers.onrender.com/api";
 
 axios.defaults.withCredentials = true;
 
